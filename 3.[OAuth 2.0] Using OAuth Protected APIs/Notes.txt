@@ -1,0 +1,40 @@
+1.[OAuth 2.0 client using the Authorization Code grant type]
+	client-authorization-coede
+	auth-code-server
+  
+  1.Go to localhost:9000.
+  2.login using client credentials.
+  3.login using user credentials.
+
+
+2. [OAuth 2.0 client using the Implicit grant type]
+	client-implicit
+ 	implicit-server
+ 
+ 	1.Go to localhost:9000.
+ 	2.login using client credentials.(aeloy abc)
+ 	3.login using user credentials.(adolfo 123)
+
+
+3.[OAuth 2.0 client using the Client Credentials grant type]
+	client-credentials-server
+  	client-client-credentials
+  	
+  	1.Go to localhost:9000.
+ 	2.login using client credentials.(admin 123)
+
+
+4.[Managing refresh tokens on the client side]
+	client-authorization-coede
+	auth-code-server
+
+
+
+5.[OAuth 2.0 protected API with RestTemplate]
+	client-rest-template
+	auth-code-server
+
+	1.Go to localhost:9000.
+ 	2.login using client credentials.(aeloy abc)
+ 	3.login using user credentials.(adolfo 123)
+

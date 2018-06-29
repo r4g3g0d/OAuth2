@@ -1,0 +1,21 @@
+1.[Revoking issued tokens]
+	revoke-server 
+
+	Steps : 1.use authorization code grant type steps
+
+2.[Remote validation using token introspection]
+	remote-resource
+	remote-authserver
+	-folder introspection
+	
+	Steps 1.use authorization code grant type steps
+		  2.use the access token for accessing remote-resource resources. req :  curl --header "Authorization: Bearer 15893509-6eb1-40ec-8244-345a137e7934" http://localhost:8081/api/profile 
+
+
+
+3.[Improving performance using cache for remote validation]
+	remote-authserver
+	cache-introspection
+
+	Steps 1.use authorization code grant type steps
+		  2.use the access token for accessing remote-resource resources. req :  curl --header "Authorization: Bearer 15893509-6eb1-40ec-8244-345a137e7934" http://localhost:8081/api/profile 

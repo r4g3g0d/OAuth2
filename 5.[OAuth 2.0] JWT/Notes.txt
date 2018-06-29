@@ -1,0 +1,35 @@
+1.[Generating access tokens as JWT]
+	auth-server-jwt
+	resource-server-jwt
+	-symmetric folder
+
+	Steps : 1.use steps from Authorization Code Grant Type
+			2.after receieving the access token :  curl --header "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzAzMTg4NDAsInVzZXJfbmFtZSI6ImFkb2xmbyIsImF1dGhvcml0aWVzIjpb										IlJPTEVfVVNFUiJdLCJqdGkiOiI0YWU5MGI0Yi1hNDVlLTQ0M2UtODQ5Ni00ZDg1ODkwODg0N2YiLCJjbGllbnRfaWQiOiJjbGllbnRhcHAiLCJzY29wZSI6WyJyZWFkX3Byb2ZpbGUiXX0.GD										 lJ1t9x49HSTIv0aFXragaKeb5PKdOde2CBn1QEbmI" http://localhost:8081/api/profile 
+
+
+
+2.[Custom Claims on JWT]
+	
+	custom-claims-jwt
+	Steps : 1.use steps from Authorization Code Grant Type
+
+
+3.[Asymmetric signing of a JWT token]
+
+	
+	jwt-asymmetric-resource
+	jwt-asymmetric-server
+	-folder asymmetric
+
+
+	Steps : 1.use steps from Authorization Code Grant Type
+			2.after receieving the access token :  curl --header "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzAzMTg4NDAsInVzZXJfbmFtZSI6ImFkb2xmbyIsImF1dGhvcml0aWVzIjpb										IlJPTEVfVVNFUiJdLCJqdGkiOiI0YWU5MGI0Yi1hNDVlLTQ0M2UtODQ5Ni00ZDg1ODkwODg0N2YiLCJjbGllbnRfaWQiOiJjbGllbnRhcHAiLCJzY29wZSI6WyJyZWFkX3Byb2ZpbGUiXX0.GD										 lJ1t9x49HSTIv0aFXragaKeb5PKdOde2CBn1QEbmI" http://localhost:8081/api/profile 
+
+
+4.[JWE to cryptographically protect JWT tokens]
+
+	Steps : 1.use steps from Authorization Code Grant Type
+			2.after receieving the access token :  curl --header "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzAzMTg4NDAsInVzZXJfbmFtZSI6ImFkb2xmbyIsImF1dGhvcml0aWVzIjpb										IlJPTEVfVVNFUiJdLCJqdGkiOiI0YWU5MGI0Yi1hNDVlLTQ0M2UtODQ5Ni00ZDg1ODkwODg0N2YiLCJjbGllbnRfaWQiOiJjbGllbnRhcHAiLCJzY29wZSI6WyJyZWFkX3Byb2ZpbGUiXX0.GD										 lJ1t9x49HSTIv0aFXragaKeb5PKdOde2CBn1QEbmI" http://localhost:8081/api/profile 
+
+
+	
