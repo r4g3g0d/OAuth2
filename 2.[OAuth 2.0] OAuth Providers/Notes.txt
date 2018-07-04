@@ -18,9 +18,9 @@
 
 3.password-sever [Resource Owner Password Credentials grant type] 
 
-	Steps : 1.curl -X POST --user clientapp:123456 http://localhost:8080/oauth/token -H "accept: application/json" -H "content-type: application/x-www-formurlencoded" -d  									  "grant_type=password&username=adolfo&password=123&scope=read_profile"
-			!response : (needs investigation)  {"error":"invalid_request","error_description":"Missing grant type"}
-
+	Steps : 1.curl -u client_id:client_secret --data "grant_type=password&username=adolfo&password=123" -X POST -H "Content-Type:application/x-www-form-urlencoded" http://localhost:8080/oauth/token
+			2.from response extract the access token and use it in the next request 
+			3.curl "http://localhost:8080/api/users" -H "Authorization: Bearer 8bc19fe3-9b2f-4456-8cb0-91cb49be13c0"
 
 4.client-credentials-server [Client Credentials grant type]
 
@@ -35,7 +35,7 @@
   		    3.obtain access token with the following command : 		curl -X POST --user clientapp:123456 http://localhost:8080/oauth/token -H "content-type: application/x-www-form-urlencoded" -d
 																	"code=[insert redirect code here without brackets]&grant_type=authorization_code&redirect_uri=http%3A%2F%2Flocalh
 																	ost%3A9000%2Fcallback&scope=read_profile" 
-			4.use access token from response : curl --header "Authorization: Bearer de8b2275-d037-48ca-a982-d593d825d7e8" http://localhost:8080/api/profile 
+			4.use access token from response : curl --header "Authorization: Bearer 15893509-6eb1-40ec-8244-345a137e7934" http://localhost:8080/api/profile 
 
 
 6.rdbm-server [Using a relational database to store tokens and client details]
